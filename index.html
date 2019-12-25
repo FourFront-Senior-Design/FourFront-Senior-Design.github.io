@@ -2,18 +2,100 @@
 <html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
-        <title>FourFront - Data Extraction Project</title>
+        <title>Senior Design Data Extraction Project</title>
+        <style>
+        table {
+          width: "100";
+          table-layout:fixed;
+          border-collapse: collapse;
+        }
+
+        table, th, td {
+          border: 1px solid black;
+        }
+
+        td {
+          width: "100";
+          word-wrap:break-word;
+        }
+
+        /* Add a black background color to the top navigation */
+        .topnav {
+          overflow: hidden;
+          border-bottom: 1px solid black;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+          float: right;
+          color: black;
+          text-align: center;
+          padding: 12px 18px;
+          text-decoration: none;
+          font-size: 20px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+          color: black;
+          transform: scale(1.1);
+        }
+
+        .title{
+          float: left;
+          font-size: x-large;
+          text-align: center;
+          padding-top: 8px;
+        }
+        </style>
     </head>
     <body>
-        <table style="width:100%">
+        <div class="topnav">
+          <div class="title">Senior Design: Data Extraction Project</div>
+          <a href="#contact">Contact</a>
+          <a href="https://fourfront-senior-design.github.io/release/">Release</a>
+          <a href="#form">Data Entry Form</a>
+        </div>
+
+        
+
+        <h3 style="padding-bottom: 10;">Data Entry Form</h3>
+        <table>
+            <col width="100">
+            <col width="150">
+            <col width="500">
             <tr>
-              <th>Release</th>
               <th>Version</th>
+              <th>Date</th>
+              <th>Features</th>
             </tr>
             <tr>
-              <td>Data Entry Form</td>
+              <td align="center"><a href="https://github.com/FourFront-Senior-Design/frontend/releases/download/V1.1/V1.1.zip">Version 1.1</a></td>
+              <td align="center"> 16th Dec, 2019</td>
               <td>
-                <a href="./DataEntryForm/V1.0.zip">Version 1.0</a>
+                <ul>
+                  <li>Carry forward <i>Cemetery Name</i>, <i>Section</i>, and <i>Marker Type</i>.</li>
+                  <li>Autogenerate <i>Primary Keys</i>.</li>
+                  <li>Masks on all <i>dates</i> fields.</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td align="center"><a href="https://github.com/FourFront-Senior-Design/frontend/releases/download/V1.0/V1.0.zip">Version 1.0</a></td>
+              <td align="center"> 9th Dec, 2019</td>
+              <td>
+                <ul>
+                  <li>Header, buttons, and images are fixed.</li>
+                  <li>The <i>Open Image</i> button will open a resizable window of the current 
+                    record, which remains is sync with the records displayed on the main form.</li>
+                  <li>The <i>Emblem</i> drop-down menu show a small picture of the emblem.</li>
+                  <li>The <i>Sequence ID</i> and <i>Primary Key</i> fields are not editable, but the text 
+                    can be selected (to copy and paste).</li>
+                  <li> <i>Gravesite number</i> is mandatory for every record.</li>
+                  <li> For each decedent (Primary, Secondary, etc.), if any of the fields 
+                    are filled, then the <i>Last Name</i> field becomes a mandatory field.</li>
+                  <li>Short-cut keys to enter "ILLEGIBLE" or "UNKNOWN" in text-boxes.</li>
+                </ul>
               </td>
             </tr>
           </table>
