@@ -1,1 +1,1 @@
-https://fourfront-senior-design.github.io/release/
+https://fourfront-senior-design.github.io/
